@@ -4,6 +4,7 @@ const port = 4001
 
 
 app.use(express.json())
-app.get("/", (req, res)=> res.send("hello world"))
+app.get("/", (req, res)=> res.json({status: 200}))
 app.listen(port, ()=> console.log("Server running on port" + port))
 
+export default app
