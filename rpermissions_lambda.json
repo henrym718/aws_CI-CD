@@ -1,0 +1,15 @@
+//agrgar ademas permisos para codebuild access develment a la funcion lambda   
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": [
+                "codecommit:PostCommentForPullRequest",
+                "codecommit:ListPullRequests",              
+                "codecommit:GetPullRequest"
+            ],
+            "Resource": "*"
+        }
+    ]
+}
